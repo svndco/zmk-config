@@ -88,5 +88,23 @@
                         &trans  &trans  &trans          &trans        &trans        &trans
             >;
         };
+
+        RESET {
+            bindings = <
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &reset
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans   &to 0     &to 0  &trans  &trans
+            >;
+        };
+
+        WIN_BASE {
+            bindings = <
+&trans  &kp Q  &kp W         &kp E    &kp R            &kp T            &kp Y   &kp U         &kp I       &kp O  &kp BACKSPACE  &trans
+&trans  &kp A  &kp S         &kp D  &lt 1 F            &kp G            &kp H   &kp J         &kp K       &kp L          &kp P  &trans
+&trans  &kp Z  &kp X         &kp C    &kp V            &kp B            &kp N   &kp M     &kp COMMA  &kp PERIOD      &kp ENTER  &trans
+                      &kp LEFT_ALT   &trans  &TT SPACE LCTRL    &kp LC(SPACE)  &tog 2  &kp LEFT_WIN
+            >;
+        };
     };
 };
